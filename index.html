@@ -225,6 +225,41 @@ footer {
   margin-bottom: 25px;
 }
 
+/* Experience section layout */
+#experience {
+  position: relative;
+}
+
+#experience .experience-card {
+  position: relative;
+  margin-left: 18px;
+  padding: 25px 28px;
+}
+
+#experience .experience-card::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  background: #2563eb;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #2563eb;
+}
+
+#experience .experience-card:hover {
+  border-left-color: #173c67;
+}
+
+@media (max-width: 600px) {
+  #experience .experience-card {
+    margin-left: 12px;
+    padding: 20px;
+  }
+}
+
 </style>
 </head>
 <body>
