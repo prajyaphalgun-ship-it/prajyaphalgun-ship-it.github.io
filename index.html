@@ -6,55 +6,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phalgun Prajya | Payments & FinTech Professional</title>
 <style>
-* { box-sizing: border-box; }
+
+:root {
+  --navy: #10243e;
+  --blue: #2563eb;
+  --light-blue: #eaf2ff;
+  --text: #263449;
+  --muted: #65748b;
+  --background: #f4f7fb;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #253247;
-  line-height: 1.7;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.75;
 }
+
 header {
-  background: #14243b;
+  background: linear-gradient(135deg, #10243e, #1d4774);
   color: white;
-  padding: 65px 20px;
+  padding: 85px 20px 75px;
   text-align: center;
 }
-header h1 { font-size: 38px; margin: 0 0 10px; }
-header p { color: #d2dbea; font-size: 18px; }
-nav { margin-top: 25px; }
+
+header h1 {
+  font-size: clamp(38px, 6vw, 58px);
+  letter-spacing: -1.5px;
+  margin: 0 0 12px;
+}
+
+header p {
+  color: #d8e6f7;
+  font-size: 17px;
+  margin: 8px 0;
+}
+
+nav {
+  margin-top: 32px;
+}
+
 nav a {
   color: white;
-  margin: 0 12px;
+  margin: 0 13px;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
 }
-main { max-width: 900px; margin: auto; padding: 25px 20px; }
+
+nav a:hover {
+  color: #9dc5ff;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 22px;
+}
+
 section {
-  background: white;
-  padding: 28px;
-  margin: 22px 0;
-  border-radius: 12px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.04);
+  background: var(--white);
+  padding: 36px;
+  margin: 25px 0;
+  border-radius: 16px;
+  border: 1px solid #e7edf5;
+  box-shadow: 0 8px 25px rgba(16, 36, 62, 0.045);
 }
-h2 { color: #173c67; margin-top: 0; }
-a { color: #1769aa; }
+
+h2 {
+  color: var(--navy);
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+h3 {
+  color: #204b79;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+p, li {
+  color: var(--muted);
+}
+
 .project {
-  border-left: 4px solid #2878bd;
-  padding-left: 18px;
+  background: #f7faff;
+  border: 1px solid #dce8f7;
+  border-left: 5px solid var(--blue);
+  padding: 25px;
+  border-radius: 12px;
 }
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #667085;
-}
+
 .button {
   display: inline-block;
-  background: #1769aa;
+  background: var(--blue);
   color: white;
-  padding: 10px 17px;
-  border-radius: 6px;
+  padding: 11px 19px;
+  border-radius: 8px;
   text-decoration: none;
-  margin: 5px 5px 5px 0;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 7px 7px 7px 0;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background: #174bb5;
+  transform: translateY(-2px);
+}
+
+footer {
+  background: var(--navy);
+  color: #d8e6f7;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 60px 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 7px;
+  }
+
+  section {
+    padding: 24px;
+  }
+
+  main {
+    padding: 18px 12px;
+  }
 }
 </style>
 </head>
